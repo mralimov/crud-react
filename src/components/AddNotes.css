@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  font-size: 2rem;
+  margin: 2em;
+}
+
+label {
+  margin: 2em 0.5em 2em 2em;
+}
+
+button {
+  margin: 2em;
+}
+
+input {
+}

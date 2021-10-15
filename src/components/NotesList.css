@@ -1,0 +1,9 @@
+.todoList {
+  /* margin: 10rem; */
+
+  list-style: none;
+}
+
+li {
+  max-width: 20rem;
+}

@@ -1,26 +1,22 @@
 import './App.css';
-import AddUser from './components/AddUser';
-import EditUser from './components/EditUser';
-import Home from './components/Home';
-import { Router, Switch, Link, Route } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react';
+import AddNotes from './components/AddNotes';
+import NotesList from './components/NotesList';
 
 function App() {
+  const [todos, setTodos] = useState([]);
+  const [inputText, setInputText] = useState('');
+
   return (
-    <div style={{ maxWidth: '30rem', margin: '0 auto' }}>
-      <Route exact path='/'>
-        <Home />
-      </Route>
-      <Route exact path='/addUser'>
-        <AddUser />
-      </Route>
-      <Route exact path='/editUser:id'>
-        <EditUser />
-      </Route>
-      {/* <Route path='*'>
-        <h1>Page Not Fount</h1>
-      </Route> */}
-    </div>
+    <>
+      <AddNotes
+        inputText={inputText}
+        setInputText={setInputText}
+        todos={todos}
+        setTodos={setTodos}
+      />
+      <NotesList todos={todos} setTodos={setTodos} />
+    </>
   );
 }
 
