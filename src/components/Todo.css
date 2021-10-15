@@ -1,0 +1,11 @@
+.todo {
+  display: flex;
+  width: 40rem;
+  list-style: none;
+  font-size: 2rem;
+  color: red;
+  border: 1px solid grey;
+  padding: 1rem;
+  max-width: 30rem;
+  margin: 0 auto;
+}
